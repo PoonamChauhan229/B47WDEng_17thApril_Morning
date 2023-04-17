@@ -1,0 +1,32 @@
+VS Code installation:
+
+https://code.visualstudio.com/download
+
+OPen Folder=> select folder=> Yes , i trust authors.
+=>We can create folders, subfolders
+=> we can files, subfiles etc....
+
+MarketPlace=> extensions
+Source Control=> Github
+
+Change Theme as Well
+
+MS.WORD
+
+
+TASK:
+JUST TRY CREATING A FOLDER AND FILES=> testing purpose.
+
+
+GITHUB:
+
+=>https://github.com/
+
+=>Signup and create account.
+
+
+
+
+
+
+
