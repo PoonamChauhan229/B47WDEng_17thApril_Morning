@@ -1,0 +1,68 @@
+Module 1:
+Introduction to JS
+
+Module 2:
+HTML CSS Bootstrap(Framework)
+
+Module 3:
+DOM Manipulation(Interactive=< Using JS )
+
+Module 4:(Advance JS)
+Async, Await, fetch, callback promises(API )
+
+Webcode : Test 
+Mock Interview
+
+_____JS_______
+
+React and thereafter things will go on 
+
+Screen resolutions: 
+
+Full Stack Web development
+=>Browsers=> 
+
+
+calculate area of triangle:
+Formula:1/2*base*height
+=>base
+=>height
+=>Substitution in the formula
+=>calculate
+=>Ans
+
+Loops:
+Forloop
+Print 1 to 10 || print1st 10 numbers
+=> 1st 10 numbers
+=>For Loops
+=>10 times
+=>initialization=>starting point =>1
+for(var i=1;i<=10;i++){
+    console.log(i)
+}
+
+
+HTTP response status codes
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+1xx=>Informational responses (100 – 199)=>Hold on=> Processing Phase
+2xx=>Successful responses (200 – 299)=>Here you Go
+3xx=>Redirection messages (300 – 399)=>Go Away
+4xx=>Client error responses (400 – 499)=>404=>Page Not Found=>You Screwed Up
+5xx=>Server error responses (500 – 599)=>Bad Gateway/ Not able to handle => I screwed up
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+
+
+
+
+
+
+
+
+
+
+
+
