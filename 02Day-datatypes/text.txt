@@ -1,0 +1,334 @@
+HTML Browser view - Debugger, Inspect,
+Browser js vs Node js
+Data types
+Copy by value and Copy by reference
+Window & document object
+
+Uising typeof -we can check Datatypes....
+
+Data types:
+1.Primitive Datatypes
+2.Composite Datatypes
+3.Trivial Datatypes
+
+
+Primitive Datatypes:
+Inbuilt Datatypes.
+>Number
+>String
+>Boolean
+
+JS is a weakly language
+int float bigint etc.....
+
+Number
+
+a=20
+20
+typeof(a)
+'number'
+a=20.5
+20.5
+typeof(a)
+'number'
+a=20.54567890345678
+20.54567890345678
+typeof(a)
+'number'
+a=3/5
+0.6
+typeof(a)
+'number
+
+
+>String:
+double quotes=>"" ''
+
+var str="56"
+undefined
+typeof(str)
+'string'
+var str="56.90"
+undefined
+typeof(str)
+'string'
+var str1=hello
+VM1942:1 Uncaught ReferenceError: hello is not defined
+    at <anonymous>:1:10
+(anonymous) @ VM1942:1
+var str1="hello"
+undefined
+typeof(str1)
+'string'
+var str1="hello how you are"
+undefined
+typeof(str1)
+'string'
+
+>Boolean
+true or false
+var x=true
+undefined
+typeof(x)
+'boolean'
+var x=false
+undefined
+typeof(x)
+'boolean'
+var x="false"
+undefined
+typeof(x)
+'string'
+
+
+_______________
+Composite Datatypes:
+Array :
+Objects:
+
+Array:
+
+reprsented  [] square bracket and inside it is sepeerated by commas
+collection of hetrogenous Datatypes/ combination of Datatypes
+var arr=[24,true,'grapes',1,"hi how are you"]
+elements
+element
+starts at what index 0
+ends at what n-1
+length
+1
+arr.length
+5
+
+access it with index numbers
+arr[2]
+'grapes'
+arr[3]
+1
+arr[4]
+'hi how are you'
+
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+O/P=>
+ 24
+ true
+ grapes
+ 1
+ hi how are you
+
+
+Question:
+var arr=[24,true,'grapes',1,"hi how are you"]
+arr[100]="lemon"
+lenght=>? 101 99 100
+Last index=>?101
+4th index we have value what will be values after 4th till 99th index>?undefined
+
+var arr=[24,true,'grapes',1,"hi how are you"]
+console.log(arr.length)
+arr[100]="lemon"
+console.log(arr.length)
+console.log(arr)
+arr[1]="B47"
+
+https://pythontutor.com/visualize.html#mode=display
+
+Objects:
+>key:value
+>{} inside it is seperated by commas
+
+Syntax
+var obj={
+    key1:value1,
+    key2:value2,
+    key3:value3
+    .......
+    }
+
+var studentDetail={
+    fname:"Abhinav",
+    lname:"Shukla",
+    age:25,
+    email:"abhi123@gmail.com"
+}
+
+2 ways to access an object:
+dot operator .
+square bracket ["key"]
+
+dot operator
+studentDetail.age
+25
+studentDetail.fname
+'Abhinav'
+studentDetail.lname
+'Shukla
+
+square bracket ["key"]
+studentDetail["age"]
+25
+studentDetail["lname"]
+'Shukla'
+studentDetail["fname"]
+'Abhinav'
+
+
+Objects:
+//read /retrive
+studentDetail.age
+25
+
+//insert an gender
+studentDetail.gender="Male"
+>
+age:25
+email:"abhi123@gmail.com"
+fname: "Abhinav"
+gender: "Male"
+lname:"Shukla"
+
+//update an fname
+studentDetail.fname="Harika"
+age:25
+email:"abhi123@gmail.com"
+fname: "Harika"
+gender: "Male"
+lname:"Shukla"
+
+//delete any record
+delete studentDetail.age
+
+//length of any object:
+keys:
+Object.keys(studentDetail)=>returns an Array
+values:
+Object.values(studentDetail)=>returns an Array
+
+Object.values(studentDetail).length
+4
+Object.keys(studentDetail).length
+4
+
+Trivial Datatypes:
+undefined
+not defined => you dont declare any variable ,=>ReferenceError: x is not defined
+null
+
+
+// to declare any varible
+var
+let 
+const
+
+var 
+
+
+typeof(studentDetail)
+'object'
+typeof(arr)
+'object'
+
+Copy by value and Copy by reference
+
+
+Copy by Value://call by value
+Primitive Datatypes
+var a, b;
+
+a=5
+a=b
+
+a=?
+b=?
+a=5
+b=5
+memory location
+5
+a and b seperate location or same 
+var a, b;
+a=5
+b=a
+console.log(a)
+console.log(b)
+a=30
+console.log(a)//30
+console.log(b)//30|5
+
+
+copy by reference
+composite Datatypes
+
+var arr;
+var arr1=[1,2,3,4]
+var arr=arr1
+console.log(arr1,arr)
+arr1[3]=100
+console.log(arr1,arr)
+
+Difference:
+
+
+Window & document object:
+
+access using what dot operator
+
+Document Object
+Webpage loaded in the Browser
+document.propertyName
+document.head
+document.title
+document.body
+
+
+Document Method
+()
+document.createAttribute()
+document.addEventListener()
+document.getElementById()
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+
+Window is an global object
+
+window.close()
+undefined
+window.outerHeight
+728
+window.innerWidth
+
+
+var b="90"
+undefined
+b
+'90'
+typeof(b)
+'string'
+parseInt(b)
+90
+b
+'90'
+var y=parseInt(b)
+undefined
+y
+90
+var h=Number(b)
+undefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
