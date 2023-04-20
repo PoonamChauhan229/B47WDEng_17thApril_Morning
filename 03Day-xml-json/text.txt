@@ -1,0 +1,215 @@
+Introduction to Array
+Array and JSON iteration
+XMLHTTPRequest
+Hoisting & scope
+
+Array:
+combination/collection of heterogenous datatypes
+check of ttypeof-> its is refered as object
+length property
+[]
+start with 0 index ends at n-1
+elements
+
+access it => with the help of index numbers=> arr[indexno]
+
+property and method
+arr.length
+method()// function
+
+JSON:
+Javascript Object Notation ||||===> Reperesentation of data
+object:
+{key:value}
+
+var studentDetail={
+    "fname":"Abhinav",
+    "lname":"Shukla",
+    "age":25,
+    "email":"abhi123@gmail.com"
+}
+
+Server:
+
+Methods of JSON
+
+JSON.parse
+This method takes a JSON string and transforms into JS Object
+When we receive data from web server , the data is in the string
+so we need to parse the data
+JSON.parse()=> string to object
+
+JSON.parse(stringifyData)
+
+JSON.stringify
+convert object to string
+While sending data to the web server the data has to be in string.
+
+JSON.stringify(studentDetail)
+
+'{"fname":"Abhinav","lname":"Shukla","age":25,"email":"abhi123@gmail.com"}'
+
+xxxx IN CONSOLE xxxxx
+
+var studentDetail={
+    fname:"Abhinav",
+    lname:"Shukla",
+    age:25,
+    email:"abhi123@gmail.com"
+}
+
+JSON.stringify(studentDetail)
+>'{"fname":"Abhinav","lname":"Shukla","age":25,"email":"abhi123@gmail.com"}'
+
+var stringifyData=JSON.stringify(studentDetail)
+
+stringifyData
+>'{"fname":"Abhinav","lname":"Shukla","age":25,"email":"abhi123@gmail.com"}'
+
+JSON.parse(stringifyData)
+>{fname: 'Abhinav', lname: 'Shukla', age: 25, email: 'abhi123@gmail.com'}
+
+JSON.parse(stringifyData).fname
+>'Abhinav'
+
+var parseData=JSON.parse(stringifyData)
+
+parseData.fname
+>'Abhinav'
+
+xxxx
+
+
+Array iteration:
+
+For loop:
+
+var arr=[1,2,3,4,5,6,7,89,100,400,600,800,23,"guvi","geek"]
+
+for(initiliazation;condition;increment/decrement){
+    //block of code
+}
+initiliazation=>starting point
+condition=>depending upon the condition, we will ask the loop to stop=> terminate the loop
+increment/decrement=>+1,-1|||++,--
+
+
+Print 100 to 105:
+for(var i=100; i<=105;i++){
+    console.log(i)
+    1:i=100,100<105 true,=>100,i=101
+    2:i=101,101<105 true,=>101,i=102
+    3:i=102,102<105 true,=>101,i=103
+    4:i=103,103<105 true,=>103,i=104
+    5:i=104,104<105 true,=>104,i=105
+    6:i=105,105<=105 true,=>105,1=106
+    7:i=106,106<=105 false=>termination loop 
+}
+
+
+Print some patterns
+i=>row=>external loop=> no of iteration
+j=>column=>internal loop => responsible for printing output
+ 12345   
+1***** i=1
+2***** i=2
+3***** i=3
+4***** i=4
+5***** i=5
+
+for(var i=1;i<=5;i++){
+    console.log("*****")
+}
+
+var string="";
+for(var i=1;i<=5;i++){//external loop
+//console.log(1)
+    for(var j=1;j<=5;j++){//internal loop
+        string=string+"*" //*****
+    }
+   string=string+"\n"
+    
+}
+console.log(string)
+
+Homework
+*
+**
+***
+****
+*****
+
+
+Loops:
+For loop=>covered
+for in => objects
+for of => arrays
+for Each=> After functions
+
+for in loop
+var studentDetail={
+    fname:"Abhinav",
+    lname:"Shukla",
+    age:25,
+    email:"abhi123@gmail.com"
+}
+
+Syntax
+for(var key in obj){
+//block of code
+}
+
+var studentDetail={
+    fname:"Abhinav",
+    lname:"Shukla",
+    age:25,
+    email:"abhi123@gmail.com"
+}
+
+for(var key in studentDetail){
+    console.log(key)
+    console.log(studentDetail[key])
+}
+
+for of
+
+var cars=["BMW","Volvo","Jeep"]
+
+Syntax
+
+for( var element of arr){
+    //block of code
+}
+
+for(var element of cars){
+console.log(element)   
+}
+
+
+XMLHTTPRequest:
+
+API:
+Application Programming Interface
+Waiter => take ur order(Request)
+Waiter => Go to the kitchen(order)(Server)
+Waiter => Deliver the food/ bring the food.(Response)
+
+Waiter is the API
+
+restcountries API.
+
+functions
+synxtax:
+function functionname(){
+    //block of code
+}
+heart of JS
+
+
+
+
+ 
+
+
+
+
