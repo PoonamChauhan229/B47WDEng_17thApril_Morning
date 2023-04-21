@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addition(){console.log(2+3)}    
+        addition()
+
+        // arrow=> single line
+        // no need of return keyword & {} braces
+        var add=()=>console.log(2+3)
+        add()
+
+        var sum=()=>2+3
+        console.log(sum())
+
+        // arrow function-multiple lines
+        var compute=()=>{
+            var result=2+3
+            console.log(result)
+        }
+        compute()
+    </script>
+</body>
+</html>

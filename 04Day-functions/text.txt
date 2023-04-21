@@ -1,0 +1,67 @@
+Hoisting:
+Functions:
+
+Hoisting:You can use a variable before its declared
+
+Functions:
+Functions are heart of JS
+Repeated actions
+
+Functions
+
+Syntax Functions
+
+function functionname(){
+    //block of code
+}
+//execution
+functionname()//invoke/calling a function
+
+Functions with parameters
+
+function functionname(param1,param2,param3,.....){
+    //block of code
+}
+functionname(value1,value2,value3,.....)
+
+Parameters: are variables listed as a part of the function
+
+Arguments:are the values passed to the function when it is invoked
+
+Function with return keyword
+return 
+return should be last line
+
+
+
+TYpes of Functions:
+1-Anonymous Function
+
+var variablename=function(){
+    //block of code
+} 
+variablename()
+
+Global eventhandlers , we have to use Anonymous functions.
+
+
+2-Arrow Function
+var variablename=()=>{
+    //block of code
+}
+variablename()
+
+3-iife Function
+Immediately Invoked function expression
+1-Grouping Operator (anonymous function)
+2-Immediately invoked function expression ()
+
+Syntax:
+(
+    function(){
+        //block of code
+    }
+)();
+
+(anonymous function)(invokation)
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate(){
+            var result=2+3;
+            // console.log(result)
+            return result//5
+        }
+         console.log(calculate())
+
+
+        function calculate2(){
+            var result=3+4;
+            return 9;
+            console.log(1)//unreachbale
+        }
+        console.log(calculate2())
+
+
+        // example:
+        // 4 subjects: M,E,S,H
+        // marks=?100
+        // calculate percentage=?
+        // Formula=> Percentage=TotalMarks Obtained/Total Marks *100
+
+        function totalSubjectsmarks(subjects){
+            var marks=100*subjects
+            return marks;//400
+        }
+
+        var marksTotalSubject=totalSubjectsmarks(4)//400
+        console.log(marksTotalSubject)
+
+        function marksobtain(M,E,S,H){
+            var total=M+E+S+H
+            return total;//302
+        }
+        console.log(marksobtain(90,89,78,45))//302        
+
+        var totalmarksObtained=marksobtain(90,89,78,45)//302
+        //console.log(totalmarksObtained)
+
+        // 302/400*100
+        //totalmarksObtained/marksTotalSubject*100
+        function percentage(x,y){
+            console.log(x,y)
+            var per=x/y*100;
+            console.log(per)
+            
+        }
+        percentage(totalmarksObtained,marksTotalSubject)
+
+    </script>
+</body>
+</html>
