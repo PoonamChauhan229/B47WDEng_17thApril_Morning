@@ -1,0 +1,25 @@
+var vs let vs const
+block scoping
+spread & rest operators
+array & object destructure=> tommorow
+Object property shorthand=>cover
+Template literals=>tommorow
+Arrow function=>covered
+
+
+var keyword
+let keyword
+const keyword
+
+
+Spread operator:
+Syntax=> (...)
+expand array into it elements.
+
+Rest operator/parameter
+(...)
+function(...)
+...rest/...args/...params
+//last parameter
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sum of odd number of an array.
+
+        //iife function
+
+        (
+            function(arr){
+                var sum=0
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!=0){
+                        sum=sum+arr[i]
+                    }
+                }
+                console.log(sum)
+            }
+        )([1,2,3,4,5,6]);
+
+        //normal function
+        function evenNormal(arr){
+                var sum=0
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!=0){
+                        sum=sum+arr[i]
+                    }
+                }
+                console.log(sum)
+            }
+            evenNormal([1,2,3,4,5,6])
+
+        //annoymous function
+        var evenAnnoymous=function(arr){
+                var sum=0
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!=0){
+                        sum=sum+arr[i]
+                    }
+                }
+                console.log(sum)
+            }
+            evenAnnoymous([1,2,3,4,5,6])
+
+        //arrow function
+        var evenArrow=(arr)=>{
+                var sum=0
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!=0){
+                        sum=sum+arr[i]
+                    }
+                }
+                console.log(sum)
+            }
+            evenArrow([1,2,3,4,5,6])
+    </script>
+</body>
+</html>

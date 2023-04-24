@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // *******
+        // if all 3 of them declared at the top , it behaves like a global variable
+        // *******
+
+        // var
+        //we can redeclare same variable n no of times
+        // we can overwrite the values again and again
+        //functionalscope function(){...}
+        var a=50;
+        a=60;
+        var a=100;
+        a=900;
+        a=600;
+        a="Guvi"
+        console.log(a)
+
+        //let
+        //we can overwrite the values again and again
+        //we cannot redelcare the same variable again and again
+        //blockscope {...}
+        let b=700;
+        b=900;
+        b=90;
+        b=30;
+       //let b=790;//Uncaught SyntaxError: Identifier 'b' has already been declared 
+        console.log(b)
+
+        //const=>constant
+        //we cannot redelcare the same variable again and again
+        // we cannot overwrite the values again and again
+        //blockscope {...}
+        const c=760;
+        //c=900;//Ucaught TypeError: Assignment to constant variable. 
+        //const c=800;//Ucaught SyntaxError: Identifier 'c' has already been declared
+        console.log(c)
+
+    </script>
+</body>
+</html>

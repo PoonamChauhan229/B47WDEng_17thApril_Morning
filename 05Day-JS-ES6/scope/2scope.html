@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+          const x=200;
+          let y=900;
+          var z=800;// var keyword doesnt have a block scope
+          console.log(x)  
+          console.log(y)
+          console.log(z)
+        }
+        
+        //console.log(x)//Uncaught ReferenceError: x is not defined
+        //console.log(y)//Uncaught ReferenceError: y is not defined
+        console.log(z)
+ 
+    </script>
+</body>
+</html>

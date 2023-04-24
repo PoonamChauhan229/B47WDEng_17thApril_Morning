@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a,b,c,d){
+                    console.log(a,b,c,d)
+                }
+        add(1,2,3,4)
+
+        //Rest parameter
+        function sum(...args){//rest operator
+            console.log(args)//returns an array
+            console.log(...args)//spread operator
+            var total=0;
+            for(var i=0;i<args.length;i++){
+                // console.log(args[i])
+                total=total+args[i]
+            }
+            console.log(total)
+        }
+        sum(1,2,3,4,7,8,9,10,18,900,78,67,54,34,67,9,08,7)
+        // last parameter
+        // Error:Rest parameter must be last formal parameter
+    </script>
+</body>
+</html>
