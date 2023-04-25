@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+           
+            constructor(name,year){//parametsr
+                console.log("Hi i am a Constructor")
+                this.name=name,
+                this.year=year,
+                this.color="black",
+                this.fuelType="diesel",
+                this.acAvaibility="NO",
+                this.modelNumber="UYUYU88989898"
+                if(6>5){
+                    console.log(6)
+                }
+
+            }
+
+            // Methods:
+            getColor(a){
+                console.log(this.color,this.acAvaibility)
+                console.log(a)
+            }
+        }
+
+        var s1=new Car("Volvo",2022)//arguments
+        console.log(s1)
+
+        var s2=new Car("BMW",null)
+        console.log(s2)
+        
+        s2.year=2023
+        console.log(s2)
+
+        let {name,year,color}=s2
+        console.log(name,year,color)
+        console.log({...s2})
+
+        // Access the Methods
+        s2.getColor(10)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Movie{
+            // a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
+            constructor(title,studio,rating){
+                this.title=title
+                this.studio=studio
+                this.rating=rating
+                if(rating==undefined){
+                    this.rating="PG"
+                }else{
+                    this.rating=rating
+                }
+            }
+            
+            //c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.
+            
+            getPG(array){
+                console.log("GETPG METHOD CALLED")
+                console.log(array)
+                // Wherever PG=> rating present that o/p 
+                let PGResult=[]
+                for(let i=0;i<array.length;i++){
+                    if(array[i].rating=="PG")
+                    // console.log(arr[i])
+                    // push method
+                    PGResult.push(arr[i])
+                }
+                console.log(PGResult)
+            }
+
+        }
+
+        // b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+        var film2=new Movie("ABC Royale","ABC Productions")
+        console.log(film2)
+
+        // d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
+        var film1=new Movie("Casino Royale","Eon Productions","PG­13")
+        console.log(film1)
+
+        var film3=new Movie("XYZ Royale","XYZ Productions")
+        var film4=new Movie("PQR Royale","PQR Productions","PG")
+        var film5=new Movie("QWE Royale","QWE Productions")
+        var film6=new Movie("LMN Royale","LMN Productions","PG56")
+        console.log(film3)
+
+        const arr=[film1,film2,film3,film4,film5,film6]
+        console.log(arr)
+        film1.getPG(arr)
+
+        console.log(arr[0].rating)
+        // 
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+array & object destructure
+Template literals=>tommorow
+OOPS:
+
+
+Array:
+
+Destructuring:
+Unpacking of the elements of arrays and objects
+React => Functional Components:
+
+
+JUST FOR INFORMATION:
+
+100+100
+>200
+"100"+100
+>'100100'
+100+100+"100"
+>'200100'
+100+"100"+100
+>'100100100'
+100+"100"+100+100
+>'100100100100'
+100+"100"+100+100+100
+>'100100100100100'
+
+Adds up from Left to Right
+String+Number =String
+Number+Number+String=String
+
+
+OOPS:
+Object Oriented Programming Language.
+
+Class Methods constructors
+
+Class:Blueprint 
+Object:
+Methods:Communicate  between the objects
+
+
+How to you create Class
+
+class ClassName{
+//Properties:
+    constructor(){
+        //assign your properties
+        //store the value 
+    }
+
+}
+
+var obj1=new ClassName()//created a object of class className-Car
+
+class Car{
+//model,color,variant, manual, electric,seater,ac-nonac, year of launch etc
+    
+}
+
+var obj={
+    jhdjh:kasjh
+    kajska:jasjha
+    hjh:kjkjk
+}
+
+
+Question:
+Class - Movie
+The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
+
+title, which is a String representing the title of the movie
+studio, which is a String representing the studio that made the movie
+rating, which is a String representing the rating of the movie (i.e. PG­13, R, etc)
+a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
+
+b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+
+c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.
+
+d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
+
+Task Time :15 min 13:00 -13:15.
+
