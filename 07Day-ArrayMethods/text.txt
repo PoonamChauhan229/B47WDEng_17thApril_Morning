@@ -1,0 +1,56 @@
+Array Methods:
+MRF
+
+MAP
+REDUCE
+FILTER
+
+Other Methods:
+()
+
+MAP:
+
+Question:
+var arr=[1,2,3,4]
+O/P=>[2,4,6,8]
+perform operation
+1*2=>2
+2*2=>4
+3*2=>6
+4*2=>8
+
+for loop
+[]
+arr[i]*2
+push Method
+[2,4,6,8]
+
+
+Transfer your Array
+function as an parameter
+=> 2 parameters
+    =>element
+    =>index
+work each and every element of your Array
+returns into a new Array
+
+
+arr.map(function(){})
+
+parseInt()
+
+
+Number()
+
+
+
+parseInt("12A")
+12
+Number("12A")
+NaN
+Number("12AB6")
+NaN
+parseInt("12AB6")
+12
+parseInt("A12AB6")
+NaN

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var arr=["1","2","3","4"]
+         //[1,2,3,4]
+
+        //parseInt
+        var result=arr.map((element)=>parseInt(element))
+        console.log(result)
+
+        
+        // Number
+        var result1=arr.map((element)=>Number(element))
+        console.log(result1)
+         // [2,4,6,8]
+
+        // Math Methods:
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+        // [1,4,9]=>[1,2,3]
+        // map+math
+        var arr2=[1,4,9]
+        var randomElement=arr2.map((element,index)=>{
+            if(element==4)
+            return element
+        })
+        console.log(randomElement)
+        var result2=arr2.map((element)=>Math.sqrt(element))
+        console.log(result2)
+
+        var arr4=["1pjkj78","2j","3k"]
+        var result5=arr4.map((ele)=>parseInt(ele))
+        console.log(result5)
+
+        // array of objects
+
+        let users=[
+            {fname:"ABC",lname:"PQR"},
+            {fname:"QWE",lname:"TYU"},
+            {fname:"GHJ",lname:"YUJN"}
+        ]
+        // Fullname users
+
+        let userFullNames=users.map((element)=>`Fname-${element.fname} Lname-${element.lname}`)
+        console.log(userFullNames)
+
+
+
+    </script>
+</body>
+</html>
