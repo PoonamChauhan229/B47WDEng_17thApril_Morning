@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students=[
+            {
+                name:"alex",
+                marks:50 
+            },
+            {
+                name:"bob",
+                marks:60
+            },
+            {
+                name:"karl",
+                marks:40
+            },
+
+        ]
+        // marks greater than 50
+        //name as well 
+
+        // >50==0
+        // >50
+
+        var result=students.filter((element)=>element.marks>50)
+        console.log(result)
+
+        var resultMap=result.map((element)=>element.name)
+        console.log(resultMap)
+        var resultName=students.filter((element)=>element.marks>50).map((element)=>element.name)
+        console.log(...resultName)
+    </script>
+</body>
+</html>

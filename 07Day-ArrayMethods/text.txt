@@ -54,3 +54,27 @@ parseInt("12AB6")
 12
 parseInt("A12AB6")
 NaN
+
+
+FILTER:
+arr.filter(function(){})
+arr.filter(()=>----)
+
+function as an parameter
+-condition=>true(satisfied)=>output
+-condition=>false(not satisfied)=>ignore
+
+REDUCE:
+sum of an array
+[1,2,3,4,5]=>
+
+reduce your entrire arry into a single value
+function as an parameter
+=> 2 parameter are passed
+    =>accumulator=> initial value=>1st element of the array.
+    
+    =>value=>element
+
+
+
+
