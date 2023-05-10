@@ -44,13 +44,15 @@
         // console.log(JSON.parse(request.response)) 
         var countriesData =JSON.parse(request.response)
         console.log(countriesData)
-        console.log(countriesData.length)
-        console.log(countriesData[0].area)
+        console.log(countriesData.filter((element)=>element.region==="Asia").map((element)=>element.capital))
 
-        for(var i=0;i<countriesData.length;i++){
-            // console.log(countriesData[i].name.common)
-            console.log("CountryName-"+countriesData[i].name.common+" Area-"+countriesData[i].area)
-        }
+        // console.log(countriesData.length)
+        // console.log(countriesData[0].area)
+
+        // for(var i=0;i<countriesData.length;i++){
+        //     // console.log(countriesData[i].name.common)
+        //     console.log("CountryName-"+countriesData[i].name.common+" Area-"+countriesData[i].area)
+        // }
 
         }
 

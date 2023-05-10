@@ -1,0 +1,115 @@
+HTML:
+HyperText MarkUp Language.
+Skeleton of the page:
+    -header
+    -navbar
+    -notification
+
+HTML is used create webpages and web applications
+widely used on web
+create static website
+
+Creating 
+JS files=>.js
+html=>.html
+
+
+index.html
+this is entry point
+
+tags
+
+
+
+VS code Extensions:
+HTML CSS Support=>ecmel
+HTML Snippets=>Mohamed Abusaid=>depricated
+Live Server=>Ritwick Dey
+vscode-icons=>VSCode Icons Team
+
+
+
+Tags:
+<tag></tag>
+<head>content</head>
+<tag>=>opening tag
+</tag>=>closing tag
+
+
+selfclosing tags:
+<tag/>
+<tag>
+
+Basic Tags:
+
+p tag
+paragraph tag
+<p>Content</p>
+
+Tag:
+<p></p>
+
+Element:
+<p>Content</p>
+
+Every tag :
+certain inbuild properties
+=>new line
+=>space created above and bottom
+
+
+Inspect=>
+Elements=> hover on whichever Element
+
+Heading/Header Tag:
+
+<h1></h1>
+.....
+<h6></h6>
+
+Comments
+<!--  -->
+ctrl+/
+
+anchor Tag:
+<a></a>
+
+Table:
+rows and columns
+<table></table>
+
+
+
+Input tags:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
