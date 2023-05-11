@@ -1,0 +1,25 @@
+/* Tag selectors */
+/* div{
+    color:blueviolet;
+} */
+h1{
+    color:pink
+}
+span{
+    color:yellow;
+}
+.test{
+    color:brown
+}
+#idtest{
+    color:orangered;
+}
+#idtest1{
+    color:orangered;
+}
+.classtest1{
+    color:lime;
+}
+.classtest2{
+    color:pink;
+}

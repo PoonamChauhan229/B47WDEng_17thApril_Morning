@@ -1,0 +1,107 @@
+Opening and closing tag
+
+
+Self closing
+<hr/>
+<br/>
+<input/>
+<img/>
+=>src=>source
+=>alt=>alternate image name
+
+
+span
+div
+section
+article
+
+inline element=>span 
+
+div=>block level element
+
+CSS:
+for styling
+for giving user a better experience
+Cascading StyleSheet
+
+
+Include Css File
+3 types of CSS
+inline 
+=> style attribute style=""
+=>specific to that element itself
+
+internal
+=>style tag
+<style>
+----- 
+</style>
+
+external
+
+style
+
+On Website
+
+index.html
+style.css
+script.js
+
+<link rel="stylesheet" href="./style.css">
+
+
+
+Selectors
+Id Selectors
+Tag Selectors
+Class Seclectors
+
+
+Tag Selectors:
+
+all the tag
+
+Selectors{
+   property:value   
+   color:red;
+}
+p{
+        color:tomato;
+}
+
+Class Seclectors:
+class attribute
+class="className"
+classes are unique in nature
+we can apply same class to multiple elements
+
+select by the classname
+prefix .
+
+.className{
+    property:value;
+}
+
+.test{
+    color:lemon;
+}
+
+id Selectors:
+Ids are unique in nature
+select by the Idname
+prefix #
+
+#idName{
+    property:value;
+}
+
+
+
+
+
+
+
+
+
+
+
