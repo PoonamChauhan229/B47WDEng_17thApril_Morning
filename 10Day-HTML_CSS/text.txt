@@ -1,0 +1,86 @@
+Box model
+kind of Wrapper around every element.
+
+Padding,Border,Margin
+
+Padding:
+Padding is used to create a space around an element's content inside the definite borders
+
+padding-right
+padding-left
+padding-top
+padding-bottom
+
+shorthand property:
+padding: 50px;=>TRBL=50px
+padding:100px 10px; TB=>100px RL=>10px
+padding:100px 20px 30px; T-100px R-20px B-30px L-20px
+padding:10px 30px 40px 50px; T-10px R-30px B-40px L-50px
+
+
+Margin:
+Margin is used to create a space around an element's content outside the definite borders
+
+margin-right
+margin-left
+margin-top
+margin-bottom
+
+shorthand property:
+margin: 50px;=>TRBL=50px
+margin:100px 10px; TB=>100px RL=>10px
+margin:100px 20px 30px; T-100px R-20px B-30px L-20px
+margin:10px 30px 40px 50px; T-10px R-30px B-40px L-50px
+
+
+Border
+Border is just an outline 
+
+border-width:TRBL
+
+border-top-width:10px;
+border-right-width:20px;
+border-bottom-width:30px;
+border-left-width:50px;
+
+shorthand
+border-width: 50px;=>TRBL=50px
+border-width:100px 10px; TB=>100px RL=>10px
+border-width:100px 20px 30px; T-100px R-20px B-30px L-20px
+border-width:10px 30px 40px 50px; T-10px R-30px B-40px L-50px
+
+
+
+border-color:TRBL
+
+border-top-color:red;
+border-right-color:green;
+border-bottom-color:pink;
+border-left-color:brown;
+
+shorthand
+border-color:red
+border-color:lemonchiffon green pink brown ;
+border-color:lemonchiffon green pink;
+border-color:lemonchiffon green;
+
+border-style:
+border-top-style: groove;
+border-right-style: dotted;
+border-bottom-style: groove;
+border-left-style: groove;
+
+
+shorthand property:
+border:1px solid red;
+
+default :
+3px border width
+black border color
+
+
+Grid:
+2 dimensional 
+rows and cols
+
+display:grid
