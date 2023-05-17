@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lineargrad{
+            width:400px;
+            height:200px;
+            background-color: yellow;
+            margin-bottom: 10px;  
+        }
+        #lineargrad1{
+            /* background-image: url('https://www.freepnglogos.com/uploads/animals-png/animals-jungle-theme-day-camp-shac-15.png');
+            background-size: 300px 200px; 
+             background-repeat: no-repeat;
+            background-size: contain; */
+            /* top to bottom */
+            background-image: linear-gradient(red,yellow,green,pink);
+        }
+        /* left to right */
+        #lineargrad2{
+            background-image: linear-gradient(to right,yellow,pink);
+        }
+         /* right to left */
+        #lineargrad3{
+            background-image: linear-gradient(to left,green,pink);
+        }
+        /* diagonal */
+        #lineargrad4{
+            background-image: linear-gradient(to bottom right,blue,pink);
+        }
+        /* best */
+        #lineargrad4{
+            background-image: linear-gradient(308deg,yellow, blue,red,pink);
+        }
+    </style>
+</head>
+<body>
+    <div id="lineargrad1" class="lineargrad"></div>
+    <div id="lineargrad2" class="lineargrad"></div>
+    <div id="lineargrad3" class="lineargrad"></div>
+    <div id="lineargrad4" class="lineargrad"></div>
+    <div id="lineargrad5" class="lineargrad"></div>
+</body>
+</html>

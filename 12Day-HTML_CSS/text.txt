@@ -1,0 +1,76 @@
+Position Properties:
+
+5 Properties
+static
+relative
+absolute
+fixed
+sticky
+
+Write:
+position:static;
+position:relative;
+position:absolute;
+position:fixed;
+position:sticky;
+
+left 
+or
+right
+
+top
+or
+bottom
+
+left:10px;
+right:56px;
+top:100px;
+bottom:15px;
+
+
+
+position:static;
+No change
+by default
+it doesnt affected by left right top or bottom
+
+position:relative;
+It is used when when we want shift or move or position any particluar element  relative to its normal position
+It is affecting the document flow
+space is created for them in the document.
+
+position:absolute;
+they are positioned wrt to parent element.
+It is affecting the document flow
+space is not created for them in the document.
+
+position:fixed;
+
+measurements:
+px
+rem=16
+percentage
+
+better one 
+percentage
+pixels
+
+
+overflow - hidden, scroll, auto, visible:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
