@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:1px solid red;
+        }
+        .containerNew{
+            display: flex;
+        }
+        .navHeading{
+            padding:5px;
+            margin:0px 5px 0px 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h1 id="h1tag">Hello</h1>
+        </div>
+
+        <div class="container">
+            <h2 id="h2tag">Hello</h2>
+        </div>
+
+        <div class="container">
+            <h3 id="h3tag">Hello</h3>
+        </div>
+    </div>
+
+<div>
+    <div class="container ">
+        <div id="navbar" class="containerNew">
+            <div class="navHeading">Home</div>
+            <div class="navHeading">About</div>
+            <div class="navHeading">Services</div>
+            <div class="navHeading">Contact Us</div>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var container=document.getElementsByClassName('container')
+       // console.log(container)
+
+       for(var i=0;i<container.length;i++){
+      //  console.log(container[i])
+        // container[i].innerHTML="<h1>Wrapper</h1>"
+       } 
+
+       var h2tagname=document.getElementById('h2tag')
+       //console.log(h2tagname)
+
+       h2tagname.style.backgroundColor="yellow"
+
+       var wrapper=document.getElementsByTagName('div')
+      // console.log(wrapper)
+
+       for(var i=0;i<wrapper.length;i++){
+       // console.log(wrapper[i])
+       } 
+
+       var navHeading=document.querySelector('.navHeading')
+        console.log(navHeading)
+    
+        var navHeadings=document.querySelectorAll('.navHeading')
+        console.log(navHeadings)
+
+        var navbar=document.querySelector('#navbar')
+        console.log(navbar)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

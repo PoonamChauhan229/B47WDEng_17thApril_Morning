@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .main{
+            background-color: yellow;
+        }
+    </style> -->
+</head>
+<body>
+    <script>
+        
+        var division1=document.createElement('div')
+        division1.innerHTML="Hello"
+        // document.body.appendChild(division1)
+
+        var division2=document.createElement('div')
+        division2.innerHTML="Hello World"
+        // document.body.appendChild(division2)
+
+        // document.body.appendChild(division1,division2)
+
+        document.body.append(division2,division1)
+
+
+        var div1=document.createElement('div')
+        // div1.innerHTML="jhjhjhjhjhjh"
+
+        var htag=document.createElement('h1')
+        htag.innerText="Hello jkjkjjkjkj"
+        // div1.appendChild(htag)
+        
+        var headertag=document.createElement('h1')
+        headertag.innerText="Hello jkjkjjkjkj"
+        // div1.appendChild(headertag)
+        div1.append(htag,headertag)
+        document.body.appendChild(div1)
+
+        // <div>
+        //     <h1></h1>
+        // </div>
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

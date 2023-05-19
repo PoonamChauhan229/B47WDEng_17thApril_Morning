@@ -1,0 +1,36 @@
+What is DOM?
+createElement, 
+setAttribute
+getElementById, 
+querySelector vs querySelectorAll
+innerHTML vs innerText
+appendChild vs append
+
+
+getElementById, 
+querySelector vs querySelectorAll
+
+Target DOM:
+selectors:
+id
+class
+tag
+
+querySelector
+querySelectorAll
+
+id
+document.getElementById(idname)
+
+class
+document.getElementsByClassName(className)
+returns an array
+
+tag
+document.getElementsByTagName(tagName)
+returns an array
+
+document.getElementById('header78')
+null
+document.getElementsByClassName('overlayGames90')
+HTMLCollection []
