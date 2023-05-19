@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dropdown</title>
+    <style>
+       
+        .name{
+            border:1px solid black;
+            padding:5px;
+        }
+        .dropdown{
+            border:1px solid red;
+            padding:10px;
+            /* width: 80px; */
+            width:500px;
+            background-color: black;
+            color: white;
+            position: relative;
+        }
+        .dropdownList{
+            display: none;
+            position: absolute;
+            left:70px;
+            background-color: rgb(12, 11, 11);
+        }
+        .dropdown:hover .dropdownList{
+            display: block;
+        }
+        @media screen and (max-width:400px){
+            .dropdown{
+                width:80px;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">Subjects <i class="fa-solid fa-caret-down"></i>
+        <div class="dropdownList">
+            <div class="name">HTML</div>
+            <div class="name">CSS</div>
+            <div class="name">JavaScript</div>
+            <div class="name">ReactJS</div>
+            <div class="name">NodeJS</div>
+        </div>
+    </div>
+</body>
+</html>

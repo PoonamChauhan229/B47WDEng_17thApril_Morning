@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* within 400px the color will be rendered */
+        /* maximum 400 */
+        /* width */
+        @media screen and (max-width:400px){
+            div{
+                background-color: green;
+                color:white;
+                font-size: 18px;
+            }
+        }
+        /* beyond 500px then color will be rendered */
+        /* width */
+        /*  minimum*/
+        @media screen and (min-width:500px){
+           div{
+            background-color:pink;
+           }
+
+        }
+        /* betwwn 600 to 768 */
+        @media (min-width:600px) and (max-width:768px) {
+            div{
+                background-color: tomato;
+            }
+            p{
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        Hi Everyone
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, eaque.
+    </p>
+</body>
+</html>
