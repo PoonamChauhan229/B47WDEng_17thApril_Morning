@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" onclick="clickMe(event)">Click Me</button>
+    
+    
+    <button id="btn">New Me</button>
+
+    <input type="text" name="" id="inputText">
+    <p id="ptext"></p>
+
+    <input type="text" name="" id="inputText2">
+    <input type="text" name="" id="inputText3" onfocus="focusEvent(event)">
+
+    <p id="mouseoverEvent" >Keep cursor over me</p>
+    
+    <script>
+        // click
+        function clickMe(event){
+            console.log("btn is clicked")
+            console.log(event)
+        }
+
+        // eventlistener
+        var btn=document.getElementById("btn")
+        console.log(btn)
+        btn.addEventListener('click',function(event){
+            console.log("New btn clicked")
+            console.log(event)
+        })
+
+        // onInput
+        var inputText=document.getElementById('inputText')
+        inputText.addEventListener('input',function(event){
+            console.log(event.target.value)
+            var ptext=document.getElementById('ptext')
+        ptext.innerText=event.target.value
+        })
+
+        var inputText2=document.getElementById('inputText2')
+        inputText2.addEventListener('blur',function(event){
+            console.log(event.target.value)
+        })
+
+        // onfocus
+       function focusEvent(event){
+        console.log(event.target.value)
+       }
+
+    //    mouseOver
+    var mouseoverEvent=document.getElementById('mouseoverEvent')
+    mouseoverEvent.addEventListener('dblclick',function(event){
+        alert("Mouse over event triggered")
+    })
+    </script>
+</body>
+</html>

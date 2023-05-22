@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 to 10  -->
+    <!-- setinterval -->
+    <!-- no for loop -->
+    <p id="counterNum"></p>
+    <script>
+        var id=setInterval(counter,1000)
+        var count=0;
+        function counter(){
+            count++
+            if(count>10){
+                var counterNum=document.getElementById('counterNum')
+                counterNum.innerText="Happy Birthday"
+                clearInterval(id)
+            }
+            else{
+                console.log(count)
+                var counterNum=document.getElementById('counterNum')
+                counterNum.innerText=count
+            }
+        }
+    </script>
+
+
+</body>
+</html>
