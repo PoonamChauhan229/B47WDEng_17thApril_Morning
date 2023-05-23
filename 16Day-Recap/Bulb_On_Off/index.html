@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="bulbContainer">
+            <img id="bulbImage"src="https://i.ibb.co/4Y3fCLv/pic-bulbon.gif" alt="pic-bulbon" border="0">
+        </div>
+        <button id="button">Switch Off</button>
+        </div>
+    </div>
+    <script>
+        // Task end time 10:25
+        let button=document.getElementById('button')
+        let bulbImage=document.getElementById('bulbImage')
+        console.log(bulbImage.src)
+        // match method in JS
+
+        button.addEventListener('click',()=>{
+            if(bulbImage.src.match("https://i.ibb.co/4Y3fCLv/pic-bulbon.gif")){
+                console.log(true)
+                bulbImage.src="https://i.ibb.co/PZHKWG4/pic-bulboff.gif"
+                button.innerText="Switch ON"
+            }else{
+                console.log(false)
+                bulbImage.src="https://i.ibb.co/4Y3fCLv/pic-bulbon.gif"
+                button.innerText="Switch OFF"
+            }
+        })
+        
+
+    </script>
+</body>
+</html>
