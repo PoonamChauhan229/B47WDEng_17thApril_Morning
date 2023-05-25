@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Write a Javascript code for character counts in the textarea. -->
+    <input type="text" id="inputText"><br/>
+    <span id="spanELement"></span><br/><br/><hr/>
+    <span id="spanELement1"></span><hr/>
+    <script>
+var inputText=document.getElementById('inputText')
+var spanELement=document.getElementById('spanELement')
+var spanELement1=document.getElementById('spanELement1')
+console.log(inputText)
+inputText.addEventListener('input',()=>{
+    // console.log(inputText.value.length)
+    spanELement.innerText=inputText.value.length
+    console.log(inputText.value.replace(/ /g,"").length)
+    spanELement1.innerText=inputText.value.replace(/ /g,"").length
+})
+    </script>
+</body>
+</html>
