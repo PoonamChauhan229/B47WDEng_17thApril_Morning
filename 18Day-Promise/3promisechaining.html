@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Promise Chaining
+        // multiple async ops
+        // multilple .then
+        // complexity also increases
+        // when it will get rejected
+        function test(){
+            // console.log(199)
+            return 100
+            console.log(199)
+            
+        }
+        console.log(test())
+
+       function compute(num){
+        // lklklkl ops 
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(num*2)
+            },2000)
+        })
+       }
+       console.log(compute(2))
+
+       compute(2).then(res=>{
+        console.log(res)
+        return compute(res)//returning an promise
+    }).then(res1=>{
+        console.log(res1)
+        return compute(res1)
+    }).then(res2=>{
+        console.log(res2)
+        return compute(res2)
+    }).then(res1=>{
+        console.log(res1)
+        return compute(res1)
+    }).then((res1)=>{
+        console.log(res1)
+        return new Promise((resolve,reject)=>{
+            reject("Failed to execute")
+        })
+    }).then(res1=>{
+        console.log(res1)
+        return compute(res1)
+    }).catch((err)=>console.log(err))
+    </script>
+</body>
+</html>

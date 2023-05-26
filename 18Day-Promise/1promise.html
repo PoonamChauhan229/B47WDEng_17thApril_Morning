@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="spanTag"></span>
+    <script>
+        var spanTag=document.getElementById('spanTag')
+        // console.log(spanTag)
+        const p=new Promise(()=>{})
+        console.log(p)
+
+        // Uncaught TypeError: Promise constructor cannot be invoked without 'new'
+        // Uncaught TypeError: Promise resolver undefined is not a function at new Promise 
+        // Promise takes function as an Parameter
+        // Promise State as pending
+
+        const  p1=new Promise((resolve,reject)=>{
+            resolve("hey")
+            reject("No")
+        })
+        console.log(p1)
+
+        const  p2=new Promise((resolve,reject)=>{
+            //reject("No")
+            resolve("hey")
+        })
+        console.log(p2)
+
+        var age=12;
+        // var age=parseInt(prompt("Enter the Number"))
+        const p3=new Promise((resolve,reject)=>{
+            if(age>18){
+                resolve("Eligible to Vote")
+            //    console.log(spanTag)
+            }
+            else{
+                reject("Not eligilble to Vote")
+            }
+        })
+        console.log(p3)
+
+        // Task:age
+        // Age from the user.
+
+        // p3.then().catch()
+
+        p3.then((res)=>{
+            console.log(res)           
+            spanTag.innerText=res;
+            console.log(spanTag)
+        })
+        .catch((err)=>{console.log(err)
+            spanTag.innerText=err;
+        
+        })//handling the errors
+
+
+    </script>
+</body>
+</html>

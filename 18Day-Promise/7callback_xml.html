@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function displayData(jsonData) {
+        console.log(jsonData);
+        console.log(jsonData.filter((element)=>element.region==="Asia").map((element)=>element.capital))
+      }
+      function xmlCallBack(callback) {
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://restcountries.com/v3.1/all");
+        request.send();
+        request.onload = function () {
+            if(request.status==200){
+                var countriesData = JSON.parse(request.response);
+                callback(countriesData)
+            }
+            else{
+                callback("Some error Occurred")
+            }
+         
+        //   console.log(countriesData);
+        };
+      }
+      xmlCallBack(displayData)
+    </script>
+  </body>
+</html>
