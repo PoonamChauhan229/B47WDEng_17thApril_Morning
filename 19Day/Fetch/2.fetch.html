@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var temp=fetch(`https://restcountries.com/v3.1/all2`)
+         .then((res)=>{return res.json()})
+         .then((data)=>display(data))
+         .catch((err)=>console.log(err))
+
+         function display(params){
+            console.log(params)
+         }
+    </script>
+</body>
+</html>

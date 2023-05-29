@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+    // button.addEventListener('click',()=>{})
+    // arr.map(()=>{})
+
+
+      const random=(carName,callback)=>{
+          setTimeout(()=>{
+            const data={
+                name:"xyz",
+                year:"2023"
+            }
+            console.log(carName)
+            callback(data)
+
+          },2000)
+      }
+
+      random("Maruti",(params)=>{
+        console.log(params)
+      })
+    </script>
+  </body>
+</html>

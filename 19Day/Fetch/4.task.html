@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    // task end:12:00
+    // extract the cityName from restcountries and pass it to weather API 
+    // 0th Index value
+    var APIkey='68efa0885519a6f01d76917c463ada68';
+    console.log(APIkey)
+    var req1=fetch(`https://restcountries.com/v3.1/all`)
+        .then((res)=>res.json())
+        .then((data)=>{
+            console.log(data)
+            //console.log(data[0].area)
+            const cityName=data[0].name.common
+            console.log(cityName)
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}&units=metric`)
+            .then((res)=>res.json())
+            .then((data)=>{
+                console.log(data)
+                console.log(`Maximum Temp is ${data.main.temp_max.toFixed()}° Celsuis`)
+            })
+
+            console.log(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}`)
+        })
+
+        // extract the cityName from restcountries and pass it to weather API 
+        // random index value
+
+        // extract the lat lon from restcountries and pass it to weather API 
+        // random index value  
+
+
+
+
+
+  </script>
+</body>
+</html>
