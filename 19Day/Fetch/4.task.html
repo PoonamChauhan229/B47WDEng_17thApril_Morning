@@ -16,29 +16,73 @@
     var req1=fetch(`https://restcountries.com/v3.1/all`)
         .then((res)=>res.json())
         .then((data)=>{
-            console.log(data)
-            //console.log(data[0].area)
+        //    console.log(data)
+        //     console.log(data[0].area)
             const cityName=data[0].name.common
-            console.log(cityName)
+        //    console.log(cityName)
 
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}&units=metric`)
             .then((res)=>res.json())
             .then((data)=>{
-                console.log(data)
-                console.log(`Maximum Temp is ${data.main.temp_max.toFixed()}° Celsuis`)
+            //    console.log(data)
+            //     console.log(`${cityName}'s Maximum Temp is ${data.main.temp_max.toFixed()}° Celsuis`)
             })
 
-            console.log(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}`)
+            //console.log(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}`)
         })
 
-        // extract the cityName from restcountries and pass it to weather API 
-        // random index value
+        // extract the random cityName from restcountries and pass it to weather API 
+        // random index value       
 
-        // extract the lat lon from restcountries and pass it to weather API 
-        // random index value  
+        var req1=fetch(`https://restcountries.com/v3.1/all`)
+        .then((res)=>res.json())
+        .then((data)=>{
+           // console.log(data)
+            const index=Math.round(Math.random()*data.length)
+           // console.log(index)
+            //console.log(data[0].area)
+            const cityName=data[index].name.common
+          // console.log(cityName)
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}&units=metric`)
+            .then((res)=>res.json())
+            .then((data)=>{
+              // console.log(data)
+              // console.log(`${cityName}'s Maximum Temp is ${data.main.temp_max.toFixed()}° Celsuis`)
+            })
+
+           // console.log(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}`)
+        })
 
 
+ // extract the lat lon from restcountries and pass it to weather API 
+// random index value  
 
+var req1=fetch(`https://restcountries.com/v3.1/all`)
+        .then((res)=>res.json())
+        .then((data)=>{
+           console.log(data)
+            const index=Math.round(Math.random()*data.length)
+            console.log(index)
+            // console.log(data[0].latlng)
+            const lat=data[index].latlng[0]
+            const lon=data[index].latlng[1]
+            console.log(lat,lon)
+
+            const cityName=data[index].name.common
+            console.log(cityName)
+
+        
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`)
+            .then((res)=>res.json())
+            .then((data)=>{
+               console.log(data)
+               console.log(`${cityName}'s Maximum Temp is ${data.main.temp_max.toFixed()}° Celsuis and Latitude: ${lat} and Longitude: ${lon}`)
+            })
+
+           console.log(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`)
+        })
 
 
   </script>

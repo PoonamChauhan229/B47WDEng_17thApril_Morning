@@ -21,7 +21,7 @@
             let res=await fetch(`https://restcountries.com/v3.1/all`)
             let data=await res.json()
             console.log(data)
-            const cityName=data[2].name.common
+            const cityName=data[6].name.common
             console.log(cityName)
 
             let res1=await  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}&units=metric`)
