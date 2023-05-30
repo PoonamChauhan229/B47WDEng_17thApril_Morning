@@ -21,13 +21,13 @@
             let res=await fetch(`https://restcountries.com/v3.1/all`)
             let data=await res.json()
             console.log(data)
-            const cityName=data[6].name.common
+            const cityName=data[0].name.common
             console.log(cityName)
 
             let res1=await  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}&units=metric`)
             let data1=await res1.json()
             console.log(data1)
-            console.log(`Maximum Temp is ${data1.main.temp_max.toFixed()}° Celsuis`)
+            console.log(`${cityName}'s Maximum Temp is ${data1.main.temp_max.toFixed()}° Celsuis`)
             }
             catch(err){
                 console.log("Error Found:",err)
@@ -39,8 +39,60 @@
      // extract the cityName from restcountries and pass it to weather API 
       // random index value
 
+      async function getDataByRandomCityName(){
+            try{
+            let res=await fetch(`https://restcountries.com/v3.1/all`)
+            let data=await res.json()
+            console.log(data)
+            const index=Math.round(Math.random()*data.length)
+           // console.log(index)
+            //console.log(data[0].area)
+            const cityName=data[index].name.common
+            console.log(cityName)
+
+            let res1=await  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}&units=metric`)
+            let data1=await res1.json()
+            console.log(data1)
+            console.log(`${cityName}'s Maximum Temp is ${data1.main.temp_max.toFixed()}° Celsuis`)
+            }
+            catch(err){
+                console.log("Error Found:",err)
+            }
+        }
+
+        getDataByRandomCityName()
+
+
+
+
     // extract the lat lon from restcountries and pass it to weather API 
     // random index value  
+
+    async function getDataByRandomLatLon(){
+            try{
+            let res=await fetch(`https://restcountries.com/v3.1/all`)
+            let data=await res.json()
+            console.log(data)
+            const index=Math.round(Math.random()*data.length)
+            // cityname
+            const cityName=data[index].name.common
+            console.log(cityName)
+            // lat & lon
+            const lat=data[index].latlng[0]
+            const lon=data[index].latlng[1]
+            console.log(lat,lon)
+
+            let res1=await   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`)
+            let data1=await res1.json()
+            console.log(data1)
+            console.log(`${cityName}'s Maximum Temp is ${data1.main.temp_max.toFixed()}° Celsuis and Latitude: ${lat} and Longitude: ${lon}`)
+            }
+            catch(err){
+                console.log("Error Found:",err)
+            }
+        }
+
+        getDataByRandomLatLon()
   </script>
 </body>
 </html>
