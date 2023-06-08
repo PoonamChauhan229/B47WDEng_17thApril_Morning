@@ -15,14 +15,61 @@
             td1.innerHTML=value1;
             td2.innerHTML=value2;
             td3.innerHTML=`
-                        <button id='edit${id}'>Edit</button>
-                        <button id='delete${id}'onClick='deleteUsersData(${id})'>Delete</button>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=#exampleModal${id} id='edit${id}'
+            onClick="getEditid('${id}','${value1}','${value2}')"
+            >
+            Edit
+            </button>
+             <button  class="btn btn-danger"id='delete${id}'onClick='deleteUsersData(${id})'>Delete</button>
             `
             tr.append(td1,td2,td3)
             itemList.append(tr)
         }
 
 
+        
+function getEditid(id,value1,value2){
+    console.log(id,value1,value2)
+    const modal=document.createElement('span');
+    console.log(modal)
+    modal.innerHTML=
+    `   <div class="modal fade" id=exampleModal${id} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update User</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body border">
+
+                    <div class="form-group row">
+                        <label for=modalname${id} class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id=modalname${id} value=${value1}>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for=modalemail${id} class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id=modalemail${id} value=${value2}>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onClick='updateUsersData(${id})'>Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.append(modal)
+} 
         // async await
         // Read
 
@@ -81,21 +128,26 @@
         // 5 min
 
         // Update by id
-        async function updateUsersData(){
+        async function updateUsersData(id){
+            var modalName=document.getElementById('modalname'+id).value
+            var modalEmail=document.getElementById('modalemail'+id).value
+            console.log(modalName,modalEmail)
             let updateUser={
-                "name":"Mr B47 WD",
-                "email":"b47guvi@gmail.com"
+                "name":modalName,
+                "email":modalEmail
             }
 
-            let data=await fetch(url+"/5",{
+            let data=await fetch(url+"/"+id,{
                 method:"PUT",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(updateUser)
             })
             let res=await data.json()
             console.log(res)
+            document.getElementById('name'+id).innerText=res.name
+            document.getElementById('email'+id).innerText=res.email
         }
-        updateUsersData()
+        // updateUsersData()
         // End:12:20
 
         // Delete
